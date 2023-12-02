@@ -9,8 +9,8 @@ part of 'video_response_link_entity.dart';
 _$VideoResponseLinkEntityImpl _$$VideoResponseLinkEntityImplFromJson(
         Map<String, dynamic> json) =>
     _$VideoResponseLinkEntityImpl(
-      next: json['next'] as String?,
-      previous: json['previous'] as String?,
+      next: json['next'] as int?,
+      previous: json['previous'] as int?,
     );
 
 Map<String, dynamic> _$$VideoResponseLinkEntityImplToJson(

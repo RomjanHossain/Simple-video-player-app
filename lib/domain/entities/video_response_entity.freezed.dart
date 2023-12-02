@@ -24,7 +24,7 @@ mixin _$VideoResponseEntity {
   int get total => throw _privateConstructorUsedError;
   int get page => throw _privateConstructorUsedError;
   int get page_size => throw _privateConstructorUsedError;
-  List<VideoResponseResultEntity> get result =>
+  List<VideoResponseResultEntity> get results =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -44,7 +44,7 @@ abstract class $VideoResponseEntityCopyWith<$Res> {
       int total,
       int page,
       int page_size,
-      List<VideoResponseResultEntity> result});
+      List<VideoResponseResultEntity> results});
 
   $VideoResponseLinkEntityCopyWith<$Res> get links;
 }
@@ -66,7 +66,7 @@ class _$VideoResponseEntityCopyWithImpl<$Res, $Val extends VideoResponseEntity>
     Object? total = null,
     Object? page = null,
     Object? page_size = null,
-    Object? result = null,
+    Object? results = null,
   }) {
     return _then(_value.copyWith(
       links: null == links
@@ -85,9 +85,9 @@ class _$VideoResponseEntityCopyWithImpl<$Res, $Val extends VideoResponseEntity>
           ? _value.page_size
           : page_size // ignore: cast_nullable_to_non_nullable
               as int,
-      result: null == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
+      results: null == results
+          ? _value.results
+          : results // ignore: cast_nullable_to_non_nullable
               as List<VideoResponseResultEntity>,
     ) as $Val);
   }
@@ -114,7 +114,7 @@ abstract class _$$VideoResponseEntityImplCopyWith<$Res>
       int total,
       int page,
       int page_size,
-      List<VideoResponseResultEntity> result});
+      List<VideoResponseResultEntity> results});
 
   @override
   $VideoResponseLinkEntityCopyWith<$Res> get links;
@@ -135,7 +135,7 @@ class __$$VideoResponseEntityImplCopyWithImpl<$Res>
     Object? total = null,
     Object? page = null,
     Object? page_size = null,
-    Object? result = null,
+    Object? results = null,
   }) {
     return _then(_$VideoResponseEntityImpl(
       links: null == links
@@ -154,9 +154,9 @@ class __$$VideoResponseEntityImplCopyWithImpl<$Res>
           ? _value.page_size
           : page_size // ignore: cast_nullable_to_non_nullable
               as int,
-      result: null == result
-          ? _value._result
-          : result // ignore: cast_nullable_to_non_nullable
+      results: null == results
+          ? _value._results
+          : results // ignore: cast_nullable_to_non_nullable
               as List<VideoResponseResultEntity>,
     ));
   }
@@ -170,8 +170,8 @@ class _$VideoResponseEntityImpl implements _VideoResponseEntity {
       required this.total,
       required this.page,
       required this.page_size,
-      required final List<VideoResponseResultEntity> result})
-      : _result = result;
+      required final List<VideoResponseResultEntity> results})
+      : _results = results;
 
   factory _$VideoResponseEntityImpl.fromJson(Map<String, dynamic> json) =>
       _$$VideoResponseEntityImplFromJson(json);
@@ -184,17 +184,17 @@ class _$VideoResponseEntityImpl implements _VideoResponseEntity {
   final int page;
   @override
   final int page_size;
-  final List<VideoResponseResultEntity> _result;
+  final List<VideoResponseResultEntity> _results;
   @override
-  List<VideoResponseResultEntity> get result {
-    if (_result is EqualUnmodifiableListView) return _result;
+  List<VideoResponseResultEntity> get results {
+    if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_result);
+    return EqualUnmodifiableListView(_results);
   }
 
   @override
   String toString() {
-    return 'VideoResponseEntity(links: $links, total: $total, page: $page, page_size: $page_size, result: $result)';
+    return 'VideoResponseEntity(links: $links, total: $total, page: $page, page_size: $page_size, results: $results)';
   }
 
   @override
@@ -207,13 +207,13 @@ class _$VideoResponseEntityImpl implements _VideoResponseEntity {
             (identical(other.page, page) || other.page == page) &&
             (identical(other.page_size, page_size) ||
                 other.page_size == page_size) &&
-            const DeepCollectionEquality().equals(other._result, _result));
+            const DeepCollectionEquality().equals(other._results, _results));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, links, total, page, page_size,
-      const DeepCollectionEquality().hash(_result));
+      const DeepCollectionEquality().hash(_results));
 
   @JsonKey(ignore: true)
   @override
@@ -236,7 +236,7 @@ abstract class _VideoResponseEntity implements VideoResponseEntity {
           required final int total,
           required final int page,
           required final int page_size,
-          required final List<VideoResponseResultEntity> result}) =
+          required final List<VideoResponseResultEntity> results}) =
       _$VideoResponseEntityImpl;
 
   factory _VideoResponseEntity.fromJson(Map<String, dynamic> json) =
@@ -251,7 +251,7 @@ abstract class _VideoResponseEntity implements VideoResponseEntity {
   @override
   int get page_size;
   @override
-  List<VideoResponseResultEntity> get result;
+  List<VideoResponseResultEntity> get results;
   @override
   @JsonKey(ignore: true)
   _$$VideoResponseEntityImplCopyWith<_$VideoResponseEntityImpl> get copyWith =>
