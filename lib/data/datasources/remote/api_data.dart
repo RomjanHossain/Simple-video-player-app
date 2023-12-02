@@ -17,7 +17,7 @@ class VideoFetchAPI {
         'https://test-ximit.mahfil.net/api/trending-video/1?format=json&page=1';
     final response = await http.get(Uri.parse(url), headers: _headers);
     if (response.statusCode == 200) {
-      final jsonD = jsonDecode(response.body);
+      final jsonD = json.decode(utf8.decode(response.bodyBytes));
       try {
         // print each ones type and value
         jsonD.forEach((key, value) {
