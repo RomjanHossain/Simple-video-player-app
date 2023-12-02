@@ -18,11 +18,13 @@ class HomepagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => HomepageBloc(),
-      child: const Scaffold(
-        body: HomepageView(),
+      child: const SafeArea(
+        child: Scaffold(
+          body: HomepageView(),
+        ),
       ),
     );
-  }    
+  }
 }
 
 /// {@template homepage_view}
