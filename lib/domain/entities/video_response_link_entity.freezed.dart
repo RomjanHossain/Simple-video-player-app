@@ -21,8 +21,8 @@ VideoResponseLinkEntity _$VideoResponseLinkEntityFromJson(
 
 /// @nodoc
 mixin _$VideoResponseLinkEntity {
-  String? get next => throw _privateConstructorUsedError;
-  String? get previous => throw _privateConstructorUsedError;
+  int? get next => throw _privateConstructorUsedError;
+  int? get previous => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,7 +36,7 @@ abstract class $VideoResponseLinkEntityCopyWith<$Res> {
           $Res Function(VideoResponseLinkEntity) then) =
       _$VideoResponseLinkEntityCopyWithImpl<$Res, VideoResponseLinkEntity>;
   @useResult
-  $Res call({String? next, String? previous});
+  $Res call({int? next, int? previous});
 }
 
 /// @nodoc
@@ -60,11 +60,11 @@ class _$VideoResponseLinkEntityCopyWithImpl<$Res,
       next: freezed == next
           ? _value.next
           : next // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       previous: freezed == previous
           ? _value.previous
           : previous // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
     ) as $Val);
   }
 }
@@ -78,7 +78,7 @@ abstract class _$$VideoResponseLinkEntityImplCopyWith<$Res>
       __$$VideoResponseLinkEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? next, String? previous});
+  $Res call({int? next, int? previous});
 }
 
 /// @nodoc
@@ -101,11 +101,11 @@ class __$$VideoResponseLinkEntityImplCopyWithImpl<$Res>
       next: freezed == next
           ? _value.next
           : next // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       previous: freezed == previous
           ? _value.previous
           : previous // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
     ));
   }
 }
@@ -120,9 +120,9 @@ class _$VideoResponseLinkEntityImpl implements _VideoResponseLinkEntity {
       _$$VideoResponseLinkEntityImplFromJson(json);
 
   @override
-  final String? next;
+  final int? next;
   @override
-  final String? previous;
+  final int? previous;
 
   @override
   String toString() {
@@ -160,16 +160,16 @@ class _$VideoResponseLinkEntityImpl implements _VideoResponseLinkEntity {
 
 abstract class _VideoResponseLinkEntity implements VideoResponseLinkEntity {
   const factory _VideoResponseLinkEntity(
-      {required final String? next,
-      required final String? previous}) = _$VideoResponseLinkEntityImpl;
+      {required final int? next,
+      required final int? previous}) = _$VideoResponseLinkEntityImpl;
 
   factory _VideoResponseLinkEntity.fromJson(Map<String, dynamic> json) =
       _$VideoResponseLinkEntityImpl.fromJson;
 
   @override
-  String? get next;
+  int? get next;
   @override
-  String? get previous;
+  int? get previous;
   @override
   @JsonKey(ignore: true)
   _$$VideoResponseLinkEntityImplCopyWith<_$VideoResponseLinkEntityImpl>

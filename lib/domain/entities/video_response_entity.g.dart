@@ -14,7 +14,7 @@ _$VideoResponseEntityImpl _$$VideoResponseEntityImplFromJson(
       total: json['total'] as int,
       page: json['page'] as int,
       page_size: json['page_size'] as int,
-      result: (json['result'] as List<dynamic>)
+      results: (json['results'] as List<dynamic>)
           .map((e) =>
               VideoResponseResultEntity.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -27,5 +27,5 @@ Map<String, dynamic> _$$VideoResponseEntityImplToJson(
       'total': instance.total,
       'page': instance.page,
       'page_size': instance.page_size,
-      'result': instance.result,
+      'results': instance.results,
     };

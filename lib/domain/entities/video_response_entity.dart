@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:simple_video_player_app/domain/entities/video_response_link_entity.dart';
 import 'package:simple_video_player_app/domain/entities/video_response_result_entity.dart';
@@ -12,7 +14,7 @@ class VideoResponseEntity with _$VideoResponseEntity {
     required int total,
     required int page,
     required int page_size,
-    required List<VideoResponseResultEntity> result,
+    required List<VideoResponseResultEntity> results,
   }) = _VideoResponseEntity;
 
   factory VideoResponseEntity.fromJson(Map<String, Object?> json) =>
